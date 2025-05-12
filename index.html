@@ -8,14 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="chat-container">
-            <iframe
-                allow="microphone;"
-                width="350"
-                height="430"
-                src="https://console.dialogflow.com/api-client/demo/embedded/9c9e4d8e-eec8-48f9-aeae-126e311da378">
-            </iframe>
-        </div>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          intent="WELCOME"
+          chat-title="AppointmentScheduler"
+          agent-id="9c9e4d8e-eec8-48f9-aeae-126e311da378"
+          language-code="en"
+        ></df-messenger>
     </div>
 </body>
 </html>
